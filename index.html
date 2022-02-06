@@ -72,7 +72,58 @@
         <!--backdrop-->
 
         <div class="backdrop is-hidden" data-modal>
+
           <div class="modal">
+
+
+            <form class="form">
+
+              <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+              <div role="group" class="block-group">
+                <ul class="form-list">
+                  <li class="form-item">
+                    <div class="block-username block-item">
+                    <label for="name">Имя</label>
+                    <input type="text" name="user-name" id="name">
+                  </div>
+                </li>
+
+                  <li class="form-item">
+                    <div class="block-tel block-item">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel">
+                  </div>
+                </li>
+
+                  <li class="form-item">
+                    <div class="block-email block-item">
+                    <label for="email">Почта</label>
+                    <input type="email" name="email" id="email">
+                  </div>
+                </li>
+
+                  <li class="form-item">
+                     <div class="block-comment block-item">
+                    <label for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" placeholder="Введите текст" ></textarea>
+                  </div>
+              </li>
+                </ul>
+              </div>
+
+            <div class="block-policy">
+            <input type="checkbox" name="policy" value="Соглашаюсь с рассылкой и принимаю Условия договора" id="policy">
+            <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link"><span class="policy-text" > Условия договора </span> </a> </label>
+          </div>
+          
+          <div class="block-submit">
+          <button type="submit" class="button-submit">Отправить</button>
+        </div>
+
+          </form>
+            
+
             <button class="button-modal" data-modal-close>
               <svg class="icon-modal" width="18" height="18">
                 <use  href="images/symbol-defs-orig.svg#close"></use>
@@ -416,6 +467,23 @@
           </a>
           </li>
         </ul>
+      </div>
+      <!--input sent footer-->
+      <div class="subscribe-block">
+        <div class="input-block">
+        <label class="footer-text email-label" for="email">Подпишитесь на рассылку</label>
+        <input class="input-email" type="email" name="email" id="email" placeholder="E-mail">
+      </div>
+
+      <div class="button-send-block">
+        <button class="button-send">Подписаться
+          <svg class="icon-send" width="24" height="24">
+            <use href="images/symbol-defs-orig.svg#icon-send">
+            </use>
+          </svg>
+        </button>
+      </div>
+
       </div>
       </div>
     </footer>
