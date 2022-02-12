@@ -86,11 +86,12 @@
               <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
 
               <div role="group" class="block-group">
+
                 <ul class="form-list">
                   <li class="form-item">
                     <div class="block-item">
-                    <label for="name">Имя</label>
-                    <input type="text" name="user-name" id="name" required autofocus>
+                    <label class="form-label" for="name">Имя</label>
+                    <input  class="form-input" type="text" name="user-name" id="name" required>
                     <svg class="icon-form" width="18" height="18">
                       <use href="/images/symbol-defs-orig.svg#person" ></use>
                     </svg>
@@ -99,8 +100,8 @@
 
                   <li class="form-item">
                     <div class="block-item">
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="tel" id="tel" required>
+                    <label  class="form-label"for="tel">Телефон</label>
+                    <input class="form-input" type="tel" name="tel" id="tel" required>
                     <svg class="icon-form" width="18" height="18">
                       <use href="/images/symbol-defs-orig.svg#phone-form" ></use>
                     </svg>
@@ -109,8 +110,8 @@
 
                   <li class="form-item">
                     <div class="block-item">
-                    <label for="email">Почта</label>
-                    <input type="email" name="email" id="email" required>
+                    <label class="form-label"  for="email">Почта</label>
+                    <input class="form-input" type="email" name="email" id="email" required>
                     <svg class="icon-form" width="18" height="18">
                       <use href="/images/symbol-defs-orig.svg#email-form" ></use>
                     </svg>
@@ -119,16 +120,27 @@
 
                   <li class="form-item">
                      <div class="block-item">
-                    <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" placeholder="Введите текст" ></textarea>
+                    <label class="form-label" for="comment">Комментарий</label>
+                    <textarea class="form-textarea" name="comment" id="comment" placeholder="Введите текст" ></textarea>
                   </div>
               </li>
                 </ul>
               </div>
 
             <div class="block-policy">
-            <input type="checkbox" name="policy" value="Соглашаюсь с рассылкой и принимаю Условия договора" id="policy">
-            <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link"><span class="policy-text" > Условия договора </span> </a> </label>
+            
+            <label class="policy-label" for="policy">
+              <input  class="input-policy" type="checkbox" name="policy" value="Соглашаюсь с рассылкой и принимаю Условия договора" id="policy" required>
+              
+              <svg class="icon-check"  width="16" height="15">
+                <use href="/images/symbol-defs-orig.svg#check-form"></use>
+              </svg>
+            
+              Соглашаюсь с рассылкой и принимаю 
+              <a href="" class="policy-link">
+                <span class="policy-text" > Условия договора </span> 
+              </a> 
+            </label>
           </div>
           
           <button type="submit" class="button-submit">Отправить</button>
