@@ -453,6 +453,7 @@ border-radius: 0px 0px 4px 4px;
 .footer-container{
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-logo {
